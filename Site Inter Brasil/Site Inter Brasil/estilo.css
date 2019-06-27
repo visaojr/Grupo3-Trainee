@@ -1,0 +1,168 @@
+﻿/* ================= layout ================ */
+
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+	background: url('imagens/bandeirs.png'), 
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,red,blue); /*OBS: LEMBRAR QUE ESSAS IMAGENS DE FUNDO PRECISAM POSSUIR OPACIDADE, SE NÃO UMA SOBREESCREVE A OUTRA*/
+	background-attachment: fixed; /*Essa função serve para manter o fundo parado, fixo*/				
+	font-family: Helvetica,Arial,sans-serif; 
+}
+
+/* -- Barra de Navegação -- */
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/logo.png') no-repeat;
+ 	filter:  brightness(0) invert(1);
+	background-size: contain;
+   	transition: all ease-out 200ms;
+	color: transparent;
+}
+
+.img-logo:hover {
+    filter: none;
+}
+
+nav.navbar-transparent{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #9bf0e1;
+	background: none;
+}
+
+
+/* -- Imagem de capa -- */
+
+.capa{
+	display: table;
+	width: 100%
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.texto-nav{
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+/* -- Botões -- */
+
+
+/* -- Seção de serviço -- */
+#servicos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+
+/* -- Seção de recursos -- */
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /*IE 9*/
+	-webkit-transform: rotate(30deg);/*Chrome, Safari, Opera*/
+	padding-left: 80px;
+}
+
+/* -- rodape -- */
+footer{
+	background: #191970;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+
+}
+
+.item-rede-social{
+	float: right;
+}
+
+/* -- imagens redondas -- */
+
+#arredondar{
+	border-radius: 100px;
+}
+
+#valores-redondo{
+	border-radius: 50%;
+}
+/* ================= Tipografia ================ */
+
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    font-family: Philosopher;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#servicos h2, #servicos h3 {
+	color: #436EEE;
+}
+
+#recursos h3{
+	color:#00FA9A;
+}
+
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.aumentar{
+	font-size: 15px;
+}
